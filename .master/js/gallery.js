@@ -18,10 +18,10 @@ $(document).ready(function() {
         
         // create the gallery menu //
         galleries.forEach(function (gallery) {
-            var href, $galleryNav;
+            var href, $galleryNavList;
             href = 'gallery.html?gallery=' + gallery.name;
-            $galleryNav = $('#gallery-nav');
-            $galleryNav.append('<li><a href="' + href + '">' + gallery.name + '</a></li>');
+            $galleryNavList = $('#gallery-nav-list');
+            $galleryNavList.append('<li><a href="' + href + '">' + gallery.name + '</a></li>');
         });
         
         gallery = _.where(galleries, {'name': name})[0] || random.element(galleries);
