@@ -1,0 +1,101 @@
+/*
+ * FONTS ***********************************************************************
+ *
+ * NOTE: To load fonts, remove the "http:" or "https:" from the url
+ * 
+ * So:
+ *     http://fonts.googleapis.com/css?family=Questrial
+ * Becomes:
+ *     //fonts.googleapis.com/css?family=Questrial
+ *******************************************************************************
+ */
+@import url(//fonts.googleapis.com/css?family=Questrial);
+
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Questrial', sans-serif;
+}
+header {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.nav-header {
+    font-size: 2em;
+}
+
+[class=all-contents] {
+    max-width: 927px;
+    margin: auto;
+}
+
+/* Main navigation menu */
+nav {
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0px;
+    border-radius: 5px;
+}
+nav header {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    flex: 1;
+}
+nav ul {
+    list-style-image: none;
+}
+nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* gallery */
+
+.title {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+#gallery {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+#lightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 1);
+    width: 100vw;
+    height: 100vh;
+}
+
+#lightbox > img {
+    max-height: 80vh;
+}

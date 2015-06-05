@@ -1,0 +1,22 @@
+{
+  "name": "curator",
+  "version": "0.0.1",
+  "description": "A node utility assisting JSON formatting of a file structure for photo galleries",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "curator",
+    "gallery"
+  ],
+  "author": "John Fraboni <john@operationspark.org>",
+  "license": "MIT",
+  "dependencies": {
+    "fs-json": "^0.1.2",
+    "glob": "^5.0.10",
+    "lodash": "^3.9.3",
+    "minimist": "^1.1.1",
+    "walk": "^2.3.9"
+  }
+}
